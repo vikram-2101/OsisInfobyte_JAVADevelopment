@@ -1,0 +1,120 @@
+.content2 h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 600;
+}
+
+.content2 p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+.content2 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  padding: 100px 50px;
+}
+.card-container {
+  display: grid;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+}
+.icon {
+  cursor: pointer;
+}
+
+@media (max-width: 667px) {
+  .content2 h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .content2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 80px 50px;
+  }
+  .head {
+    flex-direction: column;
+    margin-left: -80px;
+    margin-top: -80px;
+  }
+  .content2 p {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 300px;
+  }
+  .icon {
+    height: 60px;
+    margin-left: 120px;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-list li {
+    margin-top: 40px;
+  }
+
+  .nav-list {
+    margin-left: 70px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  .content2 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 600px;
+    margin-bottom: 20px;
+  }
+  .head {
+    margin-left: -120px;
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    margin-left: -100px;
+    margin-top: 50px;
+  }
+  .text-container h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .menu-icon {
+    .nav-list {
+      gap: 40px;
+    }
+
+    .card-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .nav-list {
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 266px;
+  gap: 2rem;
+}
+.footer hr {
+  width: 99%;
+}
+
+.footer h3 {
+  color: #98a6ac;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
